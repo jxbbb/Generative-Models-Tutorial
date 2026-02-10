@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP5421 - Computer Vision</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#description">Project Description</a>
+        <!-- <a href="#instructor">Instructor</a> -->
+        <!-- <a href="#tas">TAs</a> -->
+        <a href="#Groups">Groups</a>
+        <a href="#resources">Resources</a>
+        <a href="#tutorials">Tutorials</a>
+    </nav>
+
+    <div class="container">
+        <section id="description">
+            <h1>COMP5421 - Computer Vision - Spring 2026</h1>
+            <h2>Instructor</h2>
+            <ul>
+                <li>Prof. Long QUAN</li>
+                <li>Email: <a href="mailto:quan@cse.ust.hk">quan@cse.ust.hk</a></li>
+            </ul>
+            <h2>TAs</h2>
+            <ul>
+                <li>Bu JIN (bjinaa@connect.ust.hk)</li>
+                <li>Xiangjun GAO (xgaobq@cse.ust.hk)</li>
+            </ul>
+            <h2>Project Description</h2>
+            <h3>Topic: Visual Generation</h3>
+            <p>
+                This semester's project focuses on visual generation, encompassing any research or applied topic related to generative visual models. The aim is to explore, implement, and present creative or technical advancements in this area.
+            </p>
+            <p>You are expected to prepare preliminary results and give <strong>a mid-term presentation</strong> around the middle of the semester. You will then continue the same project, explore additional directions, and deliver <strong>a final presentation</strong> at the end of the semester. 
+            </p>
+            <p>
+                You are encouraged to explore any topic related to visual generative models, such as: image generation, image super-resolution, image inpainting, video generation, 3D generation, or other relevant areas
+            </p>
+            <p>
+                You may work in groups of 1-2 students.
+            </p>
+            <h2>Groups</h2>
+            <p>
+                You can access to this <a href="https://docs.google.com/spreadsheets/d/1uBQzrivSv8ES2qwmtLC94I27ETpArk7ywW-nVkT2vEI/edit?usp=sharing">link</a> to enter your group information or find a partner.
+            </p>
+
+            <h2>
+                Project Presentation and Report
+            </h2>
+            <p>
+                The mid-term presentations will be held on March 25 and 27. You may indicate your preferred presentation time in the group table; however, scheduling preferences cannot be guaranteed. If you have special circumstances (e.g., attending a conference and needing to present on a specific date), please note this in the Remarks column.
+            </p>
+            <p>
+                In summary, you have to prepare to <strong>present</strong> on 25/27 March and <strong>submit a report</strong> to the TAs(bjinaa@cse.ust.hk) by 29 March. 
+            </p>
+            
+        </section>
+
+        <section id="resources">
+            <h2>Course Resources</h2>
+            <h3>Deep Generative Models</h3>
+            <p>
+                Deep generative models are a class of methods that use deep neural networks to learn and represent the underlying distribution of data. In recent years, these models have achieved remarkable progress in various domains, including image and video synthesis, 3D generation, and beyond. Prominent examples include Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), autoregressive models, flow-based models, and diffusion models.
+            </p>
+            <p>
+                Here, you can use <strong>any models</strong> in your project provided it achieves satisfactory performance.
+            </p>
+            <p>
+                There are some useful tutorials for deep generative models:
+                <ul>
+                    <li><a href="https://deepgenerativemodels.github.io/notes/index.html">Stanford CS236: Deep generative models</a></li>
+                    <li>Lil'Log: <a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/">Diffusion Models</a>, <a href="https://lilianweng.github.io/posts/2018-08-12-vae/">VAEs</a>, <a href="https://lilianweng.github.io/posts/2017-08-20-gan/">GANs</a>, <a href="https://lilianweng.github.io/posts/2018-10-13-flow-models/">flow-based models</a></li>
+                    <li><a href="https://yang-song.net/blog/2021/score/">Score-based generative modeling</a> by Yang Song</li>
+                </ul>
+            </p>
+            <h3>
+                Dataset
+            </h3>
+            <p>
+                We list some commonly used datasets for generative models.
+                <ul>
+                    <li><strong>MNIST:</strong> A tiny dataset consisting of 70000 handwritten digits which are grayscale and 28x28 pixels in size.</li>
+                    <li><strong>CIFAR-10:</strong> The CIFAR-10 dataset consists of 60000 32x32 color images in 10 classes.</em></strong></li>
+                    <li><strong>CeleA:</strong> CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes dataset with more than 200K celebrity images, each with 40 attribute annotations. </li>
+                    <li><strong>Tiny-ImageNet: </strong>Tiny ImageNet is a subset of ImageNet dataset, which contains 100,000 images of 200 classes (500 for each class) downsized to 64x64 colored images.</li>
+                    <li><strong>UCF101: </strong>UCF101 is an action recognition dataset of realistic action videos with 13320 videos from 101 action categories.</li>
+                    <li><strong>ShapeNetCore:</strong> ShapeNetCore covers 55 common object categories with about 51300 unique 3D models. </li>
+                </ul>
+                <p>
+                    You can get use of MNIST, CIFAR-10, CeleA and UCF101 with <strong><em>torchvision.datasets.dataset_name</em></strong> easily. 
+                </p>
+                <p>
+                    For Tiny-ImageNet, you can download it from <a href="https://huggingface.co/datasets/zh-plus/tiny-imagenet">huggingface</a>.
+                </p>
+                <p>
+                    For ShapeNetCore, you can log in to the <a href="https://shapenet.org/" target="_blank">ShapeNet</a> website to apply for the dataset, or download preprocessed dataset by previous works directly(for example: <a href="https://github.com/1zb/3DShape2VecSet" target="_blank">3DShape2VecSet</a>).
+                </p>
+            </p>
+          
+        </section>
+
+        <section id="tutorials">
+            <h2>Tutorials & Links</h2>
+            <p>
+                We provide two simple implementations for diffusion models and flow matching models to help you get started quickly if you don't have prior knowledge.
+            </p>
+            <ul>
+                <li>
+                    Here is a <a href="https://github.com/jxbbb/Generative-Models-Tutorial/blob/main/diffusion.ipynb">simple implementation</a> for diffusion model with <a href="https://huggingface.co/docs/diffusers/en/index">diffusers</a>.
+                </li>
+                <li>
+                    For flow-based model, we recommand you to refer to torchcfm <a href="https://github.com/atong01/conditional-flow-matching/blob/main/examples/2D_tutorials/Flow_matching_tutorial.ipynb">2D toy example</a> and <a href="https://github.com/atong01/conditional-flow-matching/blob/main/examples/images/mnist_example.ipynb"> MNIST examples</a>.
+                </li>
+            </ul>
+            <p>
+                Additionally, we recommend several <strong>open-source</strong> methods for reference:
+            </p>
+            <p>
+                Image synthesis:
+            </p>
+            <ul>
+                <li>
+                    LDM: <a href="https://github.com/CompVis/latent-diffusion">High-Resolution Image Synthesis with Latent Diffusion Models.</a>
+                </li>
+                <li>
+                    DiT: <a href="https://github.com/facebookresearch/DiT">DiT: Scalable Diffusion Models with Transformers.</a>
+                </li>
+                <li>
+                    VAR: <a href="https://github.com/FoundationVision/VAR">Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction.</a>
+                </li>
+            </ul>
+            <p>
+                Video synthesis:
+            </p>
+            <ul>
+                <li>
+                    Open-Sora: <a href="https://github.com/hpcaitech/Open-Sora">Open-Sora: Democratizing Efficient Video Production for All.</a>
+                </li>
+                <li>
+                    Wan: <a href="https://github.com/Wan-Video/Wan2.2">Wan: Open and Advanced Large-Scale Video Generative Models.</a>
+                </li>
+                <li>
+                    DynamiCrafter: <a href="https://github.com/Doubiiu/DynamiCrafter">DynamiCrafter: Animating Open-domain Images with Video Diffusion Priors.</a>
+                </li>
+            </ul>
+            <p>
+                3D generation:
+            </p>
+            <ul>
+                <li>
+                    Trellis.2: <a href="https://github.com/microsoft/TRELLIS.2">Native and Compact Structured Latents for 3D Generation.</a>
+                </li>
+                <li>
+                    Direct3D-S2: <a href="https://github.com/DreamTechAI/Direct3D-S2">Direct3D‑S2: Gigascale 3D Generation Made Easy with Spatial Sparse Attention.</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 COMP5421 - Computer Vision Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>
